@@ -8,7 +8,7 @@ const mockData = [
       {
         id: 0,
         author: 'Alga Nelson',
-        date: 'Dec 17',
+        date: '2021-12-17',
         title: 'Hello 1',
         content:
           'Aaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -16,7 +16,7 @@ const mockData = [
       {
         id: 1,
         author: 'Bolga Nelson',
-        date: 'Dec 18',
+        date: '2022-03-24',
         title: 'Hello 2',
         content:
           'Bbbbbb aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -24,7 +24,7 @@ const mockData = [
       {
         id: 2,
         author: 'Colga Nelson',
-        date: 'Dec 19',
+        date: '2022-06-26',
         title: 'Hello 3',
         content:
           'Cccccc aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -39,7 +39,7 @@ const mockData = [
       {
         id: 0,
         author: 'Alga Nelson',
-        date: 'Dec 17',
+        date: '2021-12-17',
         title: 'Hello 1',
         content:
           'Aaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -47,7 +47,7 @@ const mockData = [
       {
         id: 1,
         author: 'Bolga Nelson',
-        date: 'Dec 18',
+        date: '2022-03-24',
         title: 'Hello 2',
         content:
           'Bbbbbb aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -55,7 +55,7 @@ const mockData = [
       {
         id: 2,
         author: 'Colga Nelson',
-        date: 'Dec 19',
+        date: '2022-06-26',
         title: 'Hello 3',
         content:
           'Cccccc aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -70,7 +70,7 @@ const mockData = [
       {
         id: 0,
         author: 'Alga Nelson',
-        date: 'Dec 17',
+        date: '2021-12-17',
         title: 'Hello 1',
         content:
           'Aaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -78,7 +78,7 @@ const mockData = [
       {
         id: 1,
         author: 'Bolga Nelson',
-        date: 'Dec 18',
+        date: '2022-03-24',
         title: 'Hello 2',
         content:
           'Bbbbbb aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -86,7 +86,7 @@ const mockData = [
       {
         id: 2,
         author: 'Colga Nelson',
-        date: 'Dec 19',
+        date: '2022-06-26',
         title: 'Hello 3',
         content:
           'Cccccc aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -101,7 +101,7 @@ const mockData = [
       {
         id: 0,
         author: 'Alga Nelson',
-        date: 'Dec 17',
+        date: '2021-12-17',
         title: 'Hello 1',
         content:
           'Aaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -109,7 +109,7 @@ const mockData = [
       {
         id: 1,
         author: 'Bolga Nelson',
-        date: 'Dec 18',
+        date: '2022-03-24',
         title: 'Hello 2',
         content:
           'Bbbbbb aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -117,7 +117,7 @@ const mockData = [
       {
         id: 2,
         author: 'Colga Nelson',
-        date: 'Dec 19',
+        date: '2022-06-26',
         title: 'Hello 3',
         content:
           'Cccccc aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -132,7 +132,7 @@ const mockData = [
       {
         id: 0,
         author: 'Alga Nelson',
-        date: 'Dec 17',
+        date: '2021-12-17',
         title: 'Hello 1',
         content:
           'Aaaaaa aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -140,7 +140,7 @@ const mockData = [
       {
         id: 1,
         author: 'Bolga Nelson',
-        date: 'Dec 18',
+        date: '2022-03-24',
         title: 'Hello 2',
         content:
           'Bbbbbb aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
@@ -148,7 +148,7 @@ const mockData = [
       {
         id: 2,
         author: 'Colga Nelson',
-        date: 'Dec 19',
+        date: '2022-06-26',
         title: 'Hello 3',
         content:
           'Cccccc aaaaaaaaaaaaaaa aaaaaaaaaaa aaaaaaaaa aaaaaaa aaaaa aaaaaaaaaaaaa aaaaaaaaaaaaa aaaaaaaaaaa aaaaaa',
