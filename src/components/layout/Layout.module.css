@@ -1,0 +1,13 @@
+.layout {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem;
+}
+
+.layout__main-content {
+  display: flex;
+  justify-content: center;
+  max-width: 90rem;
+  width: 100%;
+}

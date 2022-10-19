@@ -1,21 +1,17 @@
 import { Route, Routes } from 'react-router-dom';
 
 import HomePage from './pages/HomePage';
+import Layout from './components/layout/Layout';
 import TaskTabContent from './pages/TaskTabContent';
-
-// import Navbar from './components/layout/Navbar';
-
-// import classes from './App.module.css';
 
 function App() {
   return (
-    // <div className={classes.app}>
-    //   <Navbar />
-    //   <main>main content</main>
     <div className="App">
       <Routes>
-        <Route path="/" element={<HomePage />}>
-          <Route path="/:taskId" element={<TaskTabContent />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<HomePage />}>
+            <Route path="/:taskId" element={<TaskTabContent />} />
+          </Route>
         </Route>
       </Routes>
     </div>
