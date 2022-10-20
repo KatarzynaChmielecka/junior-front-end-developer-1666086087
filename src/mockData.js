@@ -7,7 +7,7 @@ const mockData = [
     businessContext: [
       {
         id: 0,
-        author: 'Alga Nelson',
+        author: 'Clga Nelson',
         date: '2021-12-17',
         title: 'Hello 1',
         content:

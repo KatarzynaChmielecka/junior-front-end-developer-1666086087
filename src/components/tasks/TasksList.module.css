@@ -1,0 +1,16 @@
+.tasks-list-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 0.63rem;
+  margin: 0 0 1rem 0;
+}
+
+.tasks-list-wrapper a {
+  color: #242325;
+  font-size: 0.75rem;
+}
+
+.tasks-list-wrapper:last-child a {
+  color: #aeb5c1;
+  pointer-events: none;
+}
