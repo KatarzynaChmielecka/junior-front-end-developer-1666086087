@@ -1,4 +1,3 @@
-//completed active blocked
 const mockData = [
   {
     id: 0,

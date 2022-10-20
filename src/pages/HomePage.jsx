@@ -11,21 +11,23 @@ import mockData from '../mockData';
 const HomePage = () => {
   return (
     <div>
-      <nav>
-        {mockData.map((index) => (
-          <TasksList
-            srcImage={
-              (index.status === 'active' && active) ||
-              (index.status === 'blocked' && blocked) ||
-              (index.status === 'completed' && completed)
-            }
-            alt={index.status}
-            href={index.status !== 'blocked' ? index.id : ''}
-            title={index.title}
-            key={index.id}
-          />
-        ))}
-      </nav>
+      <aside>
+        <nav>
+          {mockData.map((index) => (
+            <TasksList
+              srcImage={
+                (index.status === 'active' && active) ||
+                (index.status === 'blocked' && blocked) ||
+                (index.status === 'completed' && completed)
+              }
+              alt={index.status}
+              href={index.status !== 'blocked' ? index.id : ''}
+              title={index.title}
+              key={index.id}
+            />
+          ))}
+        </nav>
+      </aside>
       <Outlet />
     </div>
   );
