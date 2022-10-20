@@ -1,0 +1,20 @@
+.tasks-list-wrapper {
+  align-items: center;
+  display: flex;
+  gap: 0.63rem;
+  margin: 0 0 1rem 0;
+  /* width: 100%; */
+}
+.tasks-list-wrapper a {
+  color: #242325;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.tasks-list-wrapper:last-child a {
+  color: #aeb5c1;
+  pointer-events: none;
+}
+.tasks-list-wrapper a:focus {
+  border-right: 0.25rem solid #f4f5f7;
+}
