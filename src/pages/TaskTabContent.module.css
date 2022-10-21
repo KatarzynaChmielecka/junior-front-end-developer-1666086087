@@ -1,29 +1,34 @@
 .business-context-tabs-wrapper {
   background: #f4f5f7;
-  border-radius: 0 0 0 10px;
+  border-radius: 0 0 0 0.63rem;
+  display: flex;
   height: calc(100% - 69px);
   margin: 0 0 0.25rem 0.25rem;
   padding: 0.75rem 0.5rem 0.5rem;
   width: 20rem;
 }
 
+.tab-list {
+  margin: 0 2.75rem 0 0;
+}
 .message-tab {
   color: #6b778c;
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   font-size: 0.63rem;
   height: 6.5rem;
   margin-bottom: 0.5rem;
+  outline: none;
   overflow: hidden;
   padding: 0.69rem 1.19rem 1.06rem 1.19rem;
   width: 19rem;
-  cursor:pointer
 }
 
 .message-tab.notRead {
   background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 1px 0px #0000001a;
 }
 
 .message-tab.read {
@@ -33,7 +38,7 @@
 .message-tab.read:focus {
   background: #fff;
   border-radius: 0.5rem;
-  box-shadow: 0px 8px 16px rgba(84, 84, 84, 0.2);
+  box-shadow: 0px 8px 16px #54545433;
 }
 
 .span {
@@ -87,4 +92,50 @@
   content: '...';
   position: absolute;
   right: 0.31rem;
+}
+
+.tab-panel-wrapper {
+  width: 40.88rem;
+}
+
+.tab-panel-wrapper__title {
+  color: #242325;
+  font-size: 1.31rem;
+  font-weight: 600;
+  margin: 0 0 0.69rem 0;
+}
+.tab-panel__content-wrapper {
+  align-items: flex-start;
+  color: #6b778c;
+  display: flex;
+  gap: 1rem;
+}
+
+.tab-panel__content {
+  align-items: center;
+  display: flex;
+  font-size: 0.63rem;
+  padding: 1rem 0 0 0;
+}
+
+.tab-panel__content-author {
+  color: #242325;
+  font-size: 1rem;
+}
+.tab-panel__content-date {
+  display: flex;
+  gap: 0.31rem;
+}
+
+.tab-panel__content-separator {
+  margin: 0 0.31rem;
+}
+
+.tab-panel__content-diff-date {
+  margin: 0 0.31rem 0 0;
+}
+
+.tab-panel__content-message {
+  font-size: 0.75rem;
+  margin: 0.63rem 0 0 0;
 }
