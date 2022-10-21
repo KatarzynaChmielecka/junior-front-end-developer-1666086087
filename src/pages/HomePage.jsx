@@ -25,6 +25,7 @@ const HomePage = () => {
               href={index.status !== 'blocked' ? index.id : ''}
               title={index.title}
               key={index.id}
+              status={index.status}
             />
           ))}
         </nav>
