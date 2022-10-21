@@ -1,0 +1,19 @@
+.footer {
+  align-items: center;
+  color: #6b778c;
+  display: flex;
+  font-size: 0.5rem;
+  height: 2.25rem;
+  justify-content: space-between;
+  max-width: 90rem;
+  padding: 1rem 0 0 0;
+  width: 100%;
+}
+
+.footer__separator {
+  margin: 0 0.31rem;
+}
+
+.footer__data {
+  display: flex;
+}
