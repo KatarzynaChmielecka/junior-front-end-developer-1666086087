@@ -1,4 +1,5 @@
-import { Outlet } from 'react-router-dom';
+import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { useEffect } from 'react';
 
 import TasksList from '../components/tasks/TasksList';
 import active from '../assets/active.png';
@@ -9,6 +10,11 @@ import completed from '../assets/completed.png';
 import mockData from '../mockData';
 
 const HomePage = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
+  useEffect(() => {
+    location.pathname = '/' && navigate('/0');
+  }, []);
   return (
     <>
       <aside className={classes['aside-wrapper']}>
