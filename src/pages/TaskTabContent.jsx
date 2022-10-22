@@ -8,11 +8,14 @@ import mockData from '../mockData';
 
 const TaskTabContent = () => {
   const { taskId } = useParams();
-  const [read, setRead] = useState(false);
   const filtered = mockData.filter((index) => index.id == taskId);
+  const [clickedIndex, setClickedIndex] = useState(false);
 
-  const clicked = () => {
-    setRead(true);
+  const clicked = (index) => {
+    setClickedIndex((state) => ({
+      ...state,
+      [index]: !state[index],
+    }));
   };
 
   const diffDate = (index) => {
@@ -37,18 +40,20 @@ const TaskTabContent = () => {
         className={classes['business-context-tabs-wrapper']}
       >
         <TabList className={classes['tab-list']}>
-          {filtered[0].businessContext.map((index) => (
+          {filtered[0].businessContext.map((index, item) => (
             <Tab
               key={index.id}
-              onClick={clicked}
+              onClick={() => clicked(item)}
               className={
-                read
+                clickedIndex[item]
                   ? `${classes.read} ${classes['message-tab']}`
                   : `${classes.notRead} ${classes['message-tab']}`
               }
             >
               <div className={classes.header}>
-                {!read && <span className={classes.span}>NEW</span>}
+                {!clickedIndex[item] && (
+                  <span className={classes.span}>NEW</span>
+                )}
                 <p>{index.author}</p>
                 <span>&#183;</span>
                 <p>
