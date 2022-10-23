@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 
 import BusinessTasksList from '../components/business-context/BusinessTasksList';
-import avatar from '../assets/avatar-message.png';
+import TabPanelContent from '../components/business-context/TabPanelContent';
 import classes from './TaskTabContent.module.css';
 import mockData from '../mockData';
 
@@ -19,21 +19,6 @@ const TaskTabContent = () => {
     }));
   };
 
-  const diffDate = (index) => {
-    return Math.ceil(
-      (new Date() - new Date(index.created_at)) / (1000 * 3600 * 24),
-    );
-  };
-
-  const day = (index) =>
-    new Date(index.created_at).toLocaleDateString('en', {
-      day: 'numeric',
-    });
-
-  const month = (index) =>
-    new Date(index.created_at).toLocaleDateString('en', {
-      month: 'long',
-    });
   return (
     <>
       <Tabs
@@ -63,42 +48,11 @@ const TaskTabContent = () => {
         </TabList>
         {filtered[0].businessContext.map((index) => (
           <TabPanel key={index.id}>
-            <div className={classes['tab-panel-wrapper']}>
-              <p className={classes['tab-panel-wrapper__title']}>
-                {index.title}
-              </p>
-
-              <div className={classes['tab-panel__content-wrapper']}>
-                <img src={avatar} alt="author" />
-                <div>
-                  <div className={classes['tab-panel__content']}>
-                    <p className={classes['tab-panel__content-author']}>
-                      {index.author}
-                    </p>
-                    <span className={classes['tab-panel__content-separator']}>
-                      &#183;
-                    </span>
-                    <p className={classes['tab-panel__content-diff-date']}>
-                      {diffDate(index)} day(s) ago,
-                    </p>
-                    <p className={classes['tab-panel__content-date']}>
-                      <span>{day(index)}</span>
-                      <span>{month(index)}</span>
-                    </p>
-                    <span className={classes['tab-panel__content-separator']}>
-                      &#183;
-                    </span>
-                    <p className={classes['tab-panel__content-hours']}>
-                      {new Date(index.created_at).getHours()}:
-                      {new Date(index.created_at).getMinutes()}
-                    </p>
-                  </div>
-                  <p className={classes['tab-panel__content-message']}>
-                    {index.content}
-                  </p>
-                </div>
-              </div>
-            </div>
+            <TabPanelContent
+              title={index.title}
+              author={index.author}
+              index={index}
+            />
           </TabPanel>
         ))}
       </Tabs>
