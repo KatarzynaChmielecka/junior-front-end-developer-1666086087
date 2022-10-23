@@ -2,6 +2,7 @@ import { Tab, TabList, TabPanel, Tabs } from 'react-tabs';
 import { useParams } from 'react-router-dom';
 import { useState } from 'react';
 
+import BusinessTasksList from '../components/business-context/BusinessTasksList';
 import avatar from '../assets/avatar-message.png';
 import classes from './TaskTabContent.module.css';
 import mockData from '../mockData';
@@ -50,26 +51,13 @@ const TaskTabContent = () => {
                   : `${classes.notRead} ${classes['message-tab']}`
               }
             >
-              <div className={classes.header}>
-                {!clickedIndex[item] && (
-                  <span className={classes.span}>NEW</span>
-                )}
-                <p>{index.author}</p>
-                <span>&#183;</span>
-                <p>
-                  {new Date(index.created_at).toLocaleDateString('en', {
-                    month: 'short',
-                    day: 'numeric',
-                  })}
-                </p>
-              </div>
-              <p className={classes['business-context-title-short']}>
-                {index.title}
-              </p>
-
-              <p className={classes['business-context-content-short']}>
-                {index.content}
-              </p>
+              <BusinessTasksList
+                clickedIndex={clickedIndex[item]}
+                author={index.author}
+                created_at={index.created_at}
+                title={index.title}
+                content={index.content}
+              />
             </Tab>
           ))}
         </TabList>

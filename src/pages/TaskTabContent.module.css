@@ -12,6 +12,7 @@
   margin: 0 2.75rem 0 0;
 }
 .message-tab {
+  box-sizing: border-box;
   color: #6b778c;
   cursor: pointer;
   display: flex;
@@ -41,33 +42,6 @@
   box-shadow: 0px 8px 16px #54545433;
 }
 
-.span {
-  align-items: center;
-  background: #0165ff;
-  border-radius: 0.25rem;
-  color: #fff;
-  display: flex;
-  font-size: 0.63rem;
-  font-weight: 600;
-  height: 1.25rem;
-  justify-content: center;
-  width: 2.48rem;
-}
-
-.header {
-  align-items: center;
-  display: flex;
-  gap: 0.63rem;
-}
-
-.business-context-title-short {
-  color: #242325;
-  font-size: 0.75rem;
-  font-weight: 500;
-
-  margin: 0.5rem 0 0.31rem 0;
-}
-
 .notRead .business-context-title-short {
   color: #0165ff;
   font-weight: 700;
@@ -80,18 +54,6 @@
 .read:focus .business-context-title-short {
   color: #242325;
   font-weight: 500;
-}
-
-.business-context-content-short {
-  overflow: hidden;
-  position: relative;
-}
-
-.business-context-content-short::after {
-  bottom: -0.31rem;
-  content: '...';
-  position: absolute;
-  right: 0.31rem;
 }
 
 .tab-panel-wrapper {
