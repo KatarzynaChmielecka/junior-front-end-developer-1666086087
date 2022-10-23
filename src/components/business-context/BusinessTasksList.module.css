@@ -1,0 +1,36 @@
+.header {
+  align-items: center;
+  display: flex;
+  gap: 0.63rem;
+}
+
+.span {
+  align-items: center;
+  background: #0165ff;
+  border-radius: 0.25rem;
+  color: #fff;
+  display: flex;
+  font-size: 0.63rem;
+  font-weight: 600;
+  height: 1.25rem;
+  justify-content: center;
+  width: 2.48rem;
+}
+.business-context-title-short {
+  color: #242325;
+  font-size: 0.75rem;
+  font-weight: 500;
+
+  margin: 0.5rem 0 0.31rem 0;
+}
+.business-context-content-short {
+  overflow: hidden;
+  position: relative;
+}
+
+.business-context-content-short::after {
+  bottom: -0.31rem;
+  content: '...';
+  position: absolute;
+  right: 0.31rem;
+}

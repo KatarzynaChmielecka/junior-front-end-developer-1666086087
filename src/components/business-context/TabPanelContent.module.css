@@ -1,0 +1,45 @@
+.tab-panel-wrapper {
+  width: 40.88rem;
+}
+
+.tab-panel-wrapper__title {
+  color: #242325;
+  font-size: 1.31rem;
+  font-weight: 600;
+  margin: 0 0 0.69rem 0;
+}
+.tab-panel__content-wrapper {
+  align-items: flex-start;
+  color: #6b778c;
+  display: flex;
+  gap: 1rem;
+}
+
+.tab-panel__content {
+  align-items: center;
+  display: flex;
+  font-size: 0.63rem;
+  padding: 1rem 0 0 0;
+}
+
+.tab-panel__content-author {
+  color: #242325;
+  font-size: 1rem;
+}
+.tab-panel__content-date {
+  display: flex;
+  gap: 0.31rem;
+}
+
+.tab-panel__content-separator {
+  margin: 0 0.31rem;
+}
+
+.tab-panel__content-diff-date {
+  margin: 0 0.31rem 0 0;
+}
+
+.tab-panel__content-message {
+  font-size: 0.75rem;
+  margin: 0.63rem 0 0 0;
+}
