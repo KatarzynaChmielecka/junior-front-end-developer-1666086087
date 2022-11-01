@@ -6,7 +6,7 @@ const BusinessTasksList = ({
   created_at,
   title,
   content,
-}) => {
+}: BusinessTasksListInterface) => {
   return (
     <>
       <div className={classes.header}>
@@ -28,3 +28,10 @@ const BusinessTasksList = ({
 };
 
 export default BusinessTasksList;
+interface BusinessTasksListInterface {
+  clickedIndex: number;
+  author: string;
+  created_at: string;
+  title: string;
+  content: string;
+}
