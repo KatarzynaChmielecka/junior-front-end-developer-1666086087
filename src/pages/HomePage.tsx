@@ -12,8 +12,9 @@ import mockData from '../mockData';
 const HomePage = () => {
   const navigate = useNavigate();
   const location = useLocation();
+
   useEffect(() => {
-    location.pathname = '/' && navigate('/0');
+    (location.pathname as string | void) = '/' && navigate('/0');
   }, []);
   return (
     <>
