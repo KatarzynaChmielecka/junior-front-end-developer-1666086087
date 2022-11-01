@@ -1,4 +1,5 @@
 import classes from './BusinessTasksList.module.css';
+import { BusinessTasksListInterface } from '../../interfaces/interfaces';
 
 const BusinessTasksList = ({
   clickedIndex,
@@ -28,10 +29,3 @@ const BusinessTasksList = ({
 };
 
 export default BusinessTasksList;
-interface BusinessTasksListInterface {
-  clickedIndex: number;
-  author: string;
-  created_at: string;
-  title: string;
-  content: string;
-}
