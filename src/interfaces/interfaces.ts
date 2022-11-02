@@ -7,7 +7,7 @@ export interface TasksListInterface {
 }
 
 export interface BusinessTasksListInterface {
-  clickedIndex: number;
+  clickedIndex: object | boolean;
   author: string;
   created_at: string;
   title: string;

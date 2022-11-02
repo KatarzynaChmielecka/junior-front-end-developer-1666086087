@@ -9,13 +9,15 @@ import mockData from '../mockData';
 
 const TaskTabContent = () => {
   const { taskId } = useParams();
-  const filtered = mockData.filter((index) => index.id == taskId);
-  const [clickedIndex, setClickedIndex] = useState(false);
+  const filtered = mockData.filter((index) => index.id === +taskId!);
+  const [clickedIndex, setClickedIndex] = useState<{ [key: string]: boolean }>(
+    {},
+  );
 
-  const clicked = (index) => {
+  const clicked = (index: number) => {
     setClickedIndex((state) => ({
       ...state,
-      [index]: !state[index],
+      [index]: true,
     }));
   };
 
