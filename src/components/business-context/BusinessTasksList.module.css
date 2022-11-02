@@ -23,6 +23,10 @@
 
   margin: 0.5rem 0 0.31rem 0;
 }
+.notRead.business-context-title-short {
+  color: #0165ff;
+  font-weight: 700;
+}
 .business-context-content-short {
   overflow: hidden;
   position: relative;

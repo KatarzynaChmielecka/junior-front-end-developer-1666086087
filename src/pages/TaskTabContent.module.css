@@ -42,10 +42,7 @@
   box-shadow: 0px 8px 16px #54545433;
 }
 
-.notRead .business-context-title-short {
-  color: #0165ff;
-  font-weight: 700;
-}
+
 
 .read:focus {
   color: #6b778c;
@@ -53,5 +50,5 @@
 
 .read:focus .business-context-title-short {
   color: #242325;
-  font-weight: 500;
+  font-weight: 700;
 }
