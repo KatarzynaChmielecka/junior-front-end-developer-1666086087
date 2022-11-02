@@ -21,7 +21,15 @@ const BusinessTasksList = ({
           })}
         </p>
       </div>
-      <p className={classes['business-context-title-short']}>{title}</p>
+      <p
+        className={
+          !clickedIndex
+            ? `${classes['business-context-title-short']} ${classes.notRead}`
+            : `${classes['business-context-title-short']}`
+        }
+      >
+        {title}
+      </p>
 
       <p className={classes['business-context-content-short']}>{content}</p>
     </>
