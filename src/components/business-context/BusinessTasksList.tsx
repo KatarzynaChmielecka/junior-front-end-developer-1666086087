@@ -1,4 +1,5 @@
 import classes from './BusinessTasksList.module.css';
+import { BusinessTasksListInterface } from '../../interfaces/interfaces';
 
 const BusinessTasksList = ({
   clickedIndex,
@@ -6,7 +7,7 @@ const BusinessTasksList = ({
   created_at,
   title,
   content,
-}) => {
+}: BusinessTasksListInterface) => {
   return (
     <>
       <div className={classes.header}>

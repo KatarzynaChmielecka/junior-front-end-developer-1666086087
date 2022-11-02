@@ -1,19 +1,30 @@
 import avatar from '../../assets/avatar-message.png';
 import classes from './TabPanelContent.module.css';
 
-const TabPanelContent = ({ title, author, index }) => {
-  const diffDate = (index) => {
+const TabPanelContent = ({
+  title,
+  author,
+  index,
+}: {
+  title: string;
+  author: string;
+  index: {
+    content: string;
+    created_at: string;
+  };
+}) => {
+  const diffDate = (index: { created_at: string }) => {
     return Math.ceil(
-      (new Date() - new Date(index.created_at)) / (1000 * 3600 * 24),
+      (+new Date() - +new Date(index.created_at)) / (1000 * 3600 * 24),
     );
   };
 
-  const day = (index) =>
+  const day = (index: { created_at: string }) =>
     new Date(index.created_at).toLocaleDateString('en', {
       day: 'numeric',
     });
 
-  const month = (index) =>
+  const month = (index: { created_at: string }) =>
     new Date(index.created_at).toLocaleDateString('en', {
       month: 'long',
     });
