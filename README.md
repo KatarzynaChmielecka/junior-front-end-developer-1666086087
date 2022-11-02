@@ -1,6 +1,6 @@
 
 # Recruitment task for nerds.family
-
+with later improvements
 
 
 ## Table of contents
@@ -31,6 +31,7 @@
 
 ### Built with
 - react
+- typescript
 - react router
 - reac-tabs
 - css modules
